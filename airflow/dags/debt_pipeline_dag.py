@@ -1,8 +1,7 @@
 from datetime import datetime, timedelta
 from airflow import DAG
 from airflow.providers.docker.operators.docker import DockerOperator
-from airflow.providers.dbt.cloud.operators.dbt import DbtCloudRunJobOperator
-from airflow.models import Variable
+from docker.types import Mount
 import os
 
 default_args = {
@@ -14,10 +13,20 @@ default_args = {
     "retry_delay": timedelta(minutes=5),
 }
 
+dbt_job_id_raw = os.environ.get("DBT_CLOUD_JOB_ID", "0")
+dbt_job_id = int(dbt_job_id_raw) if dbt_job_id_raw.isdigit() else 0
+
+credentials_mount = Mount(
+    target="/app/credentials/key.json",
+    source="/mnt/storage/Desktop/sovereign-debt-observatory/credentials/sovereign-debt-sa-key.json",
+    type="bind",
+    read_only=True,
+)
+
 with DAG(
     dag_id="sovereign_debt_pipeline",
     default_args=default_args,
-    description="Quarterly ELT pipeline — World Bank JEDH + QEDS to BigQuery via GCS",
+    description="Quarterly ELT pipeline — World Bank IDS + QEDS to BigQuery via GCS",
     schedule_interval="0 6 1 1,4,7,10 *",
     start_date=datetime(2025, 1, 1),
     catchup=False,
@@ -31,11 +40,12 @@ with DAG(
         docker_url="unix://var/run/docker.sock",
         network_mode="bridge",
         environment={
-            "GOOGLE_APPLICATION_CREDENTIALS": "/app/credentials/sovereign-debt-sa-key.json",
+            "GOOGLE_APPLICATION_CREDENTIALS": "/app/credentials/key.json",
             "GCS_BUCKET": os.environ.get("GCS_BUCKET", "sovereign-debt-obs-data-lake"),
         },
-        volumes=["/mnt/storage/Desktop/sovereign-debt-observatory/credentials:/app/credentials"],
-        auto_remove=True,
+        mounts=[credentials_mount],
+        auto_remove="success",
+        mount_tmp_dir=False,
     )
 
     extract_load_qeds = DockerOperator(
@@ -45,19 +55,12 @@ with DAG(
         docker_url="unix://var/run/docker.sock",
         network_mode="bridge",
         environment={
-            "GOOGLE_APPLICATION_CREDENTIALS": "/app/credentials/sovereign-debt-sa-key.json",
+            "GOOGLE_APPLICATION_CREDENTIALS": "/app/credentials/key.json",
             "GCS_BUCKET": os.environ.get("GCS_BUCKET", "sovereign-debt-obs-data-lake"),
         },
-        volumes=["/mnt/storage/Desktop/sovereign-debt-observatory/credentials:/app/credentials"],
-        auto_remove=True,
+        mounts=[credentials_mount],
+        auto_remove="success",
+        mount_tmp_dir=False,
     )
 
-    transform_dbt = DbtCloudRunJobOperator(
-        task_id="transform_dbt_cloud",
-        dbt_cloud_conn_id="dbt_cloud_default",
-        job_id=int(os.environ.get("DBT_CLOUD_JOB_ID", 0)),
-        check_interval=30,
-        timeout=3600,
-    )
-
-    [extract_load_jedh, extract_load_qeds] >> transform_dbt
+    extract_load_jedh >> extract_load_qeds
