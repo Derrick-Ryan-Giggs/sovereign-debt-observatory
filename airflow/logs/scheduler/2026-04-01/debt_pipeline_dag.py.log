@@ -1,0 +1,199 @@
+[2026-04-01T12:38:42.093+0000] {processor.py:161} INFO - Started process (PID=67) to work on /opt/airflow/dags/debt_pipeline_dag.py
+[2026-04-01T12:38:42.095+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/debt_pipeline_dag.py for tasks to queue
+[2026-04-01T12:38:42.098+0000] {logging_mixin.py:188} INFO - [2026-04-01T12:38:42.097+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/debt_pipeline_dag.py
+[2026-04-01T12:38:42.873+0000] {logging_mixin.py:188} INFO - [2026-04-01T12:38:42.871+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/debt_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/debt_pipeline_dag.py", line 4, in <module>
+    from airflow.providers.dbt.cloud.operators.dbt import DbtCloudRunJobOperator
+ModuleNotFoundError: No module named 'airflow.providers.dbt'
+[2026-04-01T12:38:42.874+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/debt_pipeline_dag.py
+[2026-04-01T12:38:42.914+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/debt_pipeline_dag.py took 0.833 seconds
+[2026-04-01T12:39:13.115+0000] {processor.py:161} INFO - Started process (PID=74) to work on /opt/airflow/dags/debt_pipeline_dag.py
+[2026-04-01T12:39:13.118+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/debt_pipeline_dag.py for tasks to queue
+[2026-04-01T12:39:13.121+0000] {logging_mixin.py:188} INFO - [2026-04-01T12:39:13.121+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/debt_pipeline_dag.py
+[2026-04-01T12:39:13.309+0000] {logging_mixin.py:188} INFO - [2026-04-01T12:39:13.307+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/debt_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/debt_pipeline_dag.py", line 4, in <module>
+    from airflow.providers.dbt.cloud.operators.dbt import DbtCloudRunJobOperator
+ModuleNotFoundError: No module named 'airflow.providers.dbt'
+[2026-04-01T12:39:13.309+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/debt_pipeline_dag.py
+[2026-04-01T12:39:13.339+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/debt_pipeline_dag.py took 0.235 seconds
+[2026-04-01T12:39:43.490+0000] {processor.py:161} INFO - Started process (PID=81) to work on /opt/airflow/dags/debt_pipeline_dag.py
+[2026-04-01T12:39:43.491+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/debt_pipeline_dag.py for tasks to queue
+[2026-04-01T12:39:43.494+0000] {logging_mixin.py:188} INFO - [2026-04-01T12:39:43.494+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/debt_pipeline_dag.py
+[2026-04-01T12:39:43.657+0000] {logging_mixin.py:188} INFO - [2026-04-01T12:39:43.655+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/debt_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/debt_pipeline_dag.py", line 4, in <module>
+    from airflow.providers.dbt.cloud.operators.dbt import DbtCloudRunJobOperator
+ModuleNotFoundError: No module named 'airflow.providers.dbt'
+[2026-04-01T12:39:43.658+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/debt_pipeline_dag.py
+[2026-04-01T12:39:43.685+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/debt_pipeline_dag.py took 0.206 seconds
+[2026-04-01T12:40:13.856+0000] {processor.py:161} INFO - Started process (PID=88) to work on /opt/airflow/dags/debt_pipeline_dag.py
+[2026-04-01T12:40:13.858+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/debt_pipeline_dag.py for tasks to queue
+[2026-04-01T12:40:13.861+0000] {logging_mixin.py:188} INFO - [2026-04-01T12:40:13.861+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/debt_pipeline_dag.py
+[2026-04-01T12:40:14.026+0000] {logging_mixin.py:188} INFO - [2026-04-01T12:40:14.024+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/debt_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/debt_pipeline_dag.py", line 4, in <module>
+    from airflow.providers.dbt.cloud.operators.dbt import DbtCloudRunJobOperator
+ModuleNotFoundError: No module named 'airflow.providers.dbt'
+[2026-04-01T12:40:14.027+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/debt_pipeline_dag.py
+[2026-04-01T12:40:14.055+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/debt_pipeline_dag.py took 0.210 seconds
+[2026-04-01T12:40:44.229+0000] {processor.py:161} INFO - Started process (PID=95) to work on /opt/airflow/dags/debt_pipeline_dag.py
+[2026-04-01T12:40:44.230+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/debt_pipeline_dag.py for tasks to queue
+[2026-04-01T12:40:44.233+0000] {logging_mixin.py:188} INFO - [2026-04-01T12:40:44.233+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/debt_pipeline_dag.py
+[2026-04-01T12:40:44.382+0000] {logging_mixin.py:188} INFO - [2026-04-01T12:40:44.380+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/debt_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/debt_pipeline_dag.py", line 4, in <module>
+    from airflow.providers.dbt.cloud.operators.dbt import DbtCloudRunJobOperator
+ModuleNotFoundError: No module named 'airflow.providers.dbt'
+[2026-04-01T12:40:44.383+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/debt_pipeline_dag.py
+[2026-04-01T12:40:44.415+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/debt_pipeline_dag.py took 0.197 seconds
+[2026-04-01T12:41:14.596+0000] {processor.py:161} INFO - Started process (PID=102) to work on /opt/airflow/dags/debt_pipeline_dag.py
+[2026-04-01T12:41:14.598+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/debt_pipeline_dag.py for tasks to queue
+[2026-04-01T12:41:14.601+0000] {logging_mixin.py:188} INFO - [2026-04-01T12:41:14.600+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/debt_pipeline_dag.py
+[2026-04-01T12:41:14.773+0000] {logging_mixin.py:188} INFO - [2026-04-01T12:41:14.771+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/debt_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/debt_pipeline_dag.py", line 4, in <module>
+    from airflow.providers.dbt.cloud.operators.dbt import DbtCloudRunJobOperator
+ModuleNotFoundError: No module named 'airflow.providers.dbt'
+[2026-04-01T12:41:14.774+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/debt_pipeline_dag.py
+[2026-04-01T12:41:14.807+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/debt_pipeline_dag.py took 0.224 seconds
+[2026-04-01T12:41:44.991+0000] {processor.py:161} INFO - Started process (PID=109) to work on /opt/airflow/dags/debt_pipeline_dag.py
+[2026-04-01T12:41:44.993+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/debt_pipeline_dag.py for tasks to queue
+[2026-04-01T12:41:44.995+0000] {logging_mixin.py:188} INFO - [2026-04-01T12:41:44.995+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/debt_pipeline_dag.py
+[2026-04-01T12:41:45.181+0000] {logging_mixin.py:188} INFO - [2026-04-01T12:41:45.179+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/debt_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/debt_pipeline_dag.py", line 4, in <module>
+    from airflow.providers.dbt.cloud.operators.dbt import DbtCloudRunJobOperator
+ModuleNotFoundError: No module named 'airflow.providers.dbt'
+[2026-04-01T12:41:45.182+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/debt_pipeline_dag.py
+[2026-04-01T12:41:45.216+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/debt_pipeline_dag.py took 0.236 seconds
+[2026-04-01T12:42:15.398+0000] {processor.py:161} INFO - Started process (PID=116) to work on /opt/airflow/dags/debt_pipeline_dag.py
+[2026-04-01T12:42:15.401+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/debt_pipeline_dag.py for tasks to queue
+[2026-04-01T12:42:15.404+0000] {logging_mixin.py:188} INFO - [2026-04-01T12:42:15.404+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/debt_pipeline_dag.py
+[2026-04-01T12:42:15.566+0000] {logging_mixin.py:188} INFO - [2026-04-01T12:42:15.565+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/debt_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/debt_pipeline_dag.py", line 4, in <module>
+    from airflow.providers.dbt.cloud.operators.dbt import DbtCloudRunJobOperator
+ModuleNotFoundError: No module named 'airflow.providers.dbt'
+[2026-04-01T12:42:15.567+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/debt_pipeline_dag.py
+[2026-04-01T12:42:15.599+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/debt_pipeline_dag.py took 0.212 seconds
+[2026-04-01T12:42:45.780+0000] {processor.py:161} INFO - Started process (PID=123) to work on /opt/airflow/dags/debt_pipeline_dag.py
+[2026-04-01T12:42:45.781+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/debt_pipeline_dag.py for tasks to queue
+[2026-04-01T12:42:45.784+0000] {logging_mixin.py:188} INFO - [2026-04-01T12:42:45.784+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/debt_pipeline_dag.py
+[2026-04-01T12:42:45.939+0000] {logging_mixin.py:188} INFO - [2026-04-01T12:42:45.937+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/debt_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/debt_pipeline_dag.py", line 4, in <module>
+    from airflow.providers.dbt.cloud.operators.dbt import DbtCloudRunJobOperator
+ModuleNotFoundError: No module named 'airflow.providers.dbt'
+[2026-04-01T12:42:45.940+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/debt_pipeline_dag.py
+[2026-04-01T12:42:45.970+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/debt_pipeline_dag.py took 0.200 seconds
+[2026-04-01T12:43:16.151+0000] {processor.py:161} INFO - Started process (PID=130) to work on /opt/airflow/dags/debt_pipeline_dag.py
+[2026-04-01T12:43:16.152+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/debt_pipeline_dag.py for tasks to queue
+[2026-04-01T12:43:16.156+0000] {logging_mixin.py:188} INFO - [2026-04-01T12:43:16.155+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/debt_pipeline_dag.py
+[2026-04-01T12:43:16.348+0000] {logging_mixin.py:188} INFO - [2026-04-01T12:43:16.345+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/debt_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/debt_pipeline_dag.py", line 4, in <module>
+    from airflow.providers.dbt.cloud.operators.dbt import DbtCloudRunJobOperator
+ModuleNotFoundError: No module named 'airflow.providers.dbt'
+[2026-04-01T12:43:16.349+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/debt_pipeline_dag.py
+[2026-04-01T12:43:16.384+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/debt_pipeline_dag.py took 0.244 seconds
+[2026-04-01T12:43:46.565+0000] {processor.py:161} INFO - Started process (PID=137) to work on /opt/airflow/dags/debt_pipeline_dag.py
+[2026-04-01T12:43:46.566+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/debt_pipeline_dag.py for tasks to queue
+[2026-04-01T12:43:46.569+0000] {logging_mixin.py:188} INFO - [2026-04-01T12:43:46.569+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/debt_pipeline_dag.py
+[2026-04-01T12:43:46.742+0000] {logging_mixin.py:188} INFO - [2026-04-01T12:43:46.739+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/debt_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/debt_pipeline_dag.py", line 4, in <module>
+    from airflow.providers.dbt.cloud.operators.dbt import DbtCloudRunJobOperator
+ModuleNotFoundError: No module named 'airflow.providers.dbt'
+[2026-04-01T12:43:46.743+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/debt_pipeline_dag.py
+[2026-04-01T12:43:46.793+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/debt_pipeline_dag.py took 0.237 seconds
+[2026-04-01T12:44:16.989+0000] {processor.py:161} INFO - Started process (PID=144) to work on /opt/airflow/dags/debt_pipeline_dag.py
+[2026-04-01T12:44:16.992+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/debt_pipeline_dag.py for tasks to queue
+[2026-04-01T12:44:16.995+0000] {logging_mixin.py:188} INFO - [2026-04-01T12:44:16.994+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/debt_pipeline_dag.py
+[2026-04-01T12:44:17.144+0000] {logging_mixin.py:188} INFO - [2026-04-01T12:44:17.143+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/debt_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/debt_pipeline_dag.py", line 4, in <module>
+    from airflow.providers.dbt.cloud.operators.dbt import DbtCloudRunJobOperator
+ModuleNotFoundError: No module named 'airflow.providers.dbt'
+[2026-04-01T12:44:17.145+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/debt_pipeline_dag.py
+[2026-04-01T12:44:17.176+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/debt_pipeline_dag.py took 0.196 seconds
+[2026-04-01T12:44:47.354+0000] {processor.py:161} INFO - Started process (PID=151) to work on /opt/airflow/dags/debt_pipeline_dag.py
+[2026-04-01T12:44:47.355+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/debt_pipeline_dag.py for tasks to queue
+[2026-04-01T12:44:47.359+0000] {logging_mixin.py:188} INFO - [2026-04-01T12:44:47.358+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/debt_pipeline_dag.py
+[2026-04-01T12:44:47.540+0000] {logging_mixin.py:188} INFO - [2026-04-01T12:44:47.538+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/debt_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/debt_pipeline_dag.py", line 4, in <module>
+    from airflow.providers.dbt.cloud.operators.dbt import DbtCloudRunJobOperator
+ModuleNotFoundError: No module named 'airflow.providers.dbt'
+[2026-04-01T12:44:47.541+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/debt_pipeline_dag.py
+[2026-04-01T12:44:47.572+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/debt_pipeline_dag.py took 0.229 seconds
+[2026-04-01T12:45:17.756+0000] {processor.py:161} INFO - Started process (PID=158) to work on /opt/airflow/dags/debt_pipeline_dag.py
+[2026-04-01T12:45:17.760+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/debt_pipeline_dag.py for tasks to queue
+[2026-04-01T12:45:17.763+0000] {logging_mixin.py:188} INFO - [2026-04-01T12:45:17.762+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/debt_pipeline_dag.py
+[2026-04-01T12:45:17.924+0000] {logging_mixin.py:188} INFO - [2026-04-01T12:45:17.922+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/debt_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/debt_pipeline_dag.py", line 4, in <module>
+    from airflow.providers.dbt.cloud.operators.dbt import DbtCloudRunJobOperator
+ModuleNotFoundError: No module named 'airflow.providers.dbt'
+[2026-04-01T12:45:17.925+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/debt_pipeline_dag.py
+[2026-04-01T12:45:17.957+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/debt_pipeline_dag.py took 0.212 seconds
+[2026-04-01T12:45:48.167+0000] {processor.py:161} INFO - Started process (PID=165) to work on /opt/airflow/dags/debt_pipeline_dag.py
+[2026-04-01T12:45:48.169+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/debt_pipeline_dag.py for tasks to queue
+[2026-04-01T12:45:48.176+0000] {logging_mixin.py:188} INFO - [2026-04-01T12:45:48.174+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/debt_pipeline_dag.py
