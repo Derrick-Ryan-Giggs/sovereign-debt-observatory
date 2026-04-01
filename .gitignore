@@ -1,0 +1,21 @@
+# credentials
+credentials/
+
+# environment files — real files with actual secrets
+.env
+airflow/.env
+
+# terraform
+terraform/.terraform/
+terraform/terraform.tfvars
+terraform/*.tfstate
+terraform/*.tfstate.backup
+terraform/.terraform.lock.hcl
+
+# python
+__pycache__/
+*.pyc
+.venv/
+
+# misc
+.DS_Store
