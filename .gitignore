@@ -1,7 +1,7 @@
 # credentials
 credentials/
 
-# environment files — real files with actual secrets
+# environment files
 .env
 airflow/.env
 
@@ -16,6 +16,9 @@ terraform/.terraform.lock.hcl
 __pycache__/
 *.pyc
 .venv/
+
+# airflow logs
+airflow/logs/
 
 # misc
 .DS_Store
