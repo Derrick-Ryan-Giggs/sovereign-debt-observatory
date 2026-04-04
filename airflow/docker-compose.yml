@@ -28,6 +28,8 @@ x-airflow-common: &airflow-common
     - /var/run/docker.sock:/var/run/docker.sock
     - /etc/passwd:/etc/passwd:ro 
   user: "${AIRFLOW_UID:-50000}:0"
+  group_add:
+    - "984"
   depends_on:
     redis:
       condition: service_healthy

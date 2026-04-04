@@ -22,3 +22,5 @@ airflow/logs/
 
 # misc
 .DS_Store
+
+.bruin.yml
