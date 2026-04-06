@@ -47,7 +47,14 @@ def extract_jedh():
         raise RuntimeError("No IDS data fetched — aborting.")
 
     combined = pd.concat(records, ignore_index=True)
+
+    combined.columns = [
+        f"year_{col}" if str(col).isdigit() else col
+        for col in combined.columns
+    ]
+
     print(f"Total rows fetched: {len(combined)}")
+    print(f"Columns: {list(combined.columns)}")
     return combined
 
 
