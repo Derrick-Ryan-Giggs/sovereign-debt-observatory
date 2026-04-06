@@ -1,0 +1,32 @@
+version: 2
+
+models:
+  - name: mart_debt_stocks
+    description: "Partitioned debt stock mart with YoY changes and % of total debt per country/series/year"
+    columns:
+      - name: country_code
+        tests:
+          - not_null
+      - name: year
+        tests:
+          - not_null
+      - name: series_code
+        tests:
+          - not_null
+
+  - name: mart_regional_debt
+    description: "Regional aggregate debt stocks by series and year"
+    columns:
+      - name: region
+        tests:
+          - not_null
+      - name: year
+        tests:
+          - not_null
+
+  - name: mart_debt_service
+    description: "QEDS debt payment schedule data cleaned and aggregated by country"
+    columns:
+      - name: country_code
+        tests:
+          - not_null

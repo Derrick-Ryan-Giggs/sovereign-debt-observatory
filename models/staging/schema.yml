@@ -1,0 +1,32 @@
+version: 2
+
+models:
+  - name: stg_jedh
+    description: "Cleaned and unpivoted IDS debt stock data — long format, one row per country/series/year"
+    columns:
+      - name: country_code
+        description: "ISO3 country code"
+        tests:
+          - not_null
+      - name: series_code
+        description: "World Bank series code"
+        tests:
+          - not_null
+      - name: year
+        description: "Year of observation"
+        tests:
+          - not_null
+      - name: debt_value_usd
+        description: "Debt value in current USD"
+
+  - name: stg_qeds
+    description: "Cleaned QEDS SDDS debt payment schedule data"
+    columns:
+      - name: country_code
+        description: "ISO3 country code"
+        tests:
+          - not_null
+      - name: series_code
+        description: "World Bank series code"
+        tests:
+          - not_null
