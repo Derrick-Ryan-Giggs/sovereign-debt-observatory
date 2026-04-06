@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+  - name: raw_jedh
+    database: sovereign-debt-observatory
+    schema: raw
+    tables:
+      - name: jedh
+        description: "Raw IDS debt stock data from World Bank API source 2, partitioned by extracted_date"
+
+  - name: raw_qeds
+    database: sovereign-debt-observatory
+    schema: raw
+    tables:
+      - name: qeds
+        description: "Raw QEDS SDDS debt payment schedule data from World Bank Excel bulk downloads"
