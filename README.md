@@ -115,7 +115,7 @@ Two-page Looker Studio dashboard connected to the three mart tables in BigQuery.
 - Debt service pressure table with quarterly payment totals (answers Q5)
 - Country filter control
 
-Dashboard: *(link to be added after final deployment)*
+Dashboard: *(https://lookerstudio.google.com/reporting/7fc18e9e-a5c6-4616-b920-b5b4bddf2264)*
 
 ## Reproducibility Steps
 
