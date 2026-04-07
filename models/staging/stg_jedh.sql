@@ -59,6 +59,16 @@ final as (
     where country_code is not null
         and country_code != 'nan'
         and debt_value_usd is not null
+        and length(country_code) = 3
+        and country_code not in (
+            'LMY', 'MIC', 'UMC', 'LMC', 'LIC',
+            'EAP', 'ECA', 'LAC', 'MNA', 'SAS',
+            'SSA', 'SSF', 'HIC', 'OED', 'EMU',
+            'ARB', 'CEB', 'EAR', 'ECS', 'HPC',
+            'IBD', 'IBT', 'IDA', 'IDX', 'LDC',
+            'PRE', 'PSS', 'PST', 'TEA', 'TEC',
+            'TLA', 'TMN', 'TSA', 'TSS', 'WLD'
+        )
 )
 
 select * from final
